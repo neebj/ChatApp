@@ -4,7 +4,7 @@ var request = require("supertest"),
 describe('GET /', function () {
     it('expects HTTP response 200', function (done) {
         request(app)
-            .post('/api/groups/Tina3')
+            .post('/api/groups/NeebTinaJonathJohan')
             .expect(201)    
             .end(function (err, res) {
                 //if (err) return done(err);

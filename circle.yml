@@ -1,0 +1,9 @@
+deployment:
+  staging:
+   branch: master
+    heroku:
+      appname: chatherokuapp
+
+test:
+  override:    
+    - mocha
