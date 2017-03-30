@@ -17,9 +17,10 @@ var server = http.createServer(app);
 if(!module.parent) {
 server.listen(3000);
 }
-exports.closeServer = function(){
-  server.close();
-};
+module.exports.getApp = app;
+// exports.closeServer = function(){
+//   server.close();
+// };
 // var path = require('path');
 // var favicon = require('serve-favicon');
 // var logger = require('morgan');
