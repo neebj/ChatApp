@@ -16,6 +16,7 @@
     "morgan": "~1.7.0",
     "request": "^2.81.0",
     "serve-favicon": "~2.3.2",
+    "supertest": "^3.0.0",
     "vash": "^0.12.2"
   }
 }
