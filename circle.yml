@@ -1,6 +1,9 @@
+# The deployment section should be excluded until
+# it is explicitly included in module 5
+
 deployment:
   staging:
-   branch: master
+    branch: master
     heroku:
       appname: chatherokuapp
 
