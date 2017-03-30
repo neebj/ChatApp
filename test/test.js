@@ -4,9 +4,9 @@ var request=require('request'),
 describe("Add Group Test", function(){
 describe("Add groupName", function() {
 it("returns status code 201", function(done) {
-request.post('http://localhost:3000/api/groups/sachin',function(req,res)
+request.post('/api/groups/sachin',function(req,res)
 {
-assert.equal(201,201);//res.statusCode
+assert.equal(201,res.statusCode);//res.statusCode
 app.closeServer();
 done();
 });
