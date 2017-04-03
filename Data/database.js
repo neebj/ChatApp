@@ -1,7 +1,8 @@
 (function(database)
 {
 var mongodb=require("mongodb");
-var mongoUrl="mongodb://localhost:27017/chatDB";
+//var mongoUrl="mongodb://localhost:27017/chatDB";
+var mongoUrl=process.env.MongodbUrl || "mongodb://localhost:27017/chatDB";
 var theDB=null;
 database.getDB=function(next)
 {
