@@ -33,8 +33,15 @@
                 }
                 else
                 {
-                     res.set("Content-Type","application/json");
-                    res.status(200).send(groupName + ' has been inserted');
+                     res.set("Content-Type","text/html");
+                     dataaccess.getAllGroups(function(err,results)
+                     {
+                     
+                             res.render("chatGroup",{Title:"Groups",error:err,groups:results});
+                         
+                     });
+                      
+                   // res.status(200).send(groupName + ' has been inserted');
                 }
             });
         });

@@ -2,7 +2,16 @@
 {
 @html.block('body',function(model)
 {
+    @if(model.error)
+    {
+        <div>Error Occured : @model.error</div>
+    }
 <h1>@model.Title</h1>
-<p>This is from server</p>
+
+@model.groups.forEach(function(group)
+{
+<div>@(group.groupName)</div>
+})
+
 })
 })

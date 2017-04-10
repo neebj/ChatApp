@@ -16,4 +16,31 @@ database.getDB(function(err,db)
 });
 };
 
+dataaccess.getAllGroups=function(next)
+{
+database.getDB(function(err,db)
+{
+    if(err)
+    {
+        next(err,null);
+    }
+    else
+    {
+        db.groups.find().toArray(function(err,results)
+        {
+            if(err)
+            {
+                next(err,null);
+            }
+            else
+            {
+              
+                next(null,results)    ;
+            }
+
+        });
+    }
+});
+};
+
 })(module.exports);
