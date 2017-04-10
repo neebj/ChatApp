@@ -23,9 +23,7 @@ server.listen(port, function(err){
 });
 }
 module.exports.getApp = app;
-// exports.closeServer = function(){
-//   server.close();
-// };
+
 // var path = require('path');
 // var favicon = require('serve-favicon');
 // var logger = require('morgan');

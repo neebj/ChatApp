@@ -2,13 +2,14 @@ var request = require("supertest"),
     app = require("../app").getApp;
 
 describe('GET /', function () {
-    it('expects HTTP response 200', function (done) {
+   
+    it('expects HTTP response 200', function () {
         request(app)
             .get('/api/groups/JesusChrist')
-            .expect(201)    
+            .expect(200)    
             .end(function (err, res) {
                 //if (err) return done(err);
-                done();
+                //done();
             });
     });
 });

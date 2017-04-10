@@ -2,6 +2,7 @@
     
     var dataaccess= require('../Data/dataaccess');
     chatgroupController.init = function (app) {
+       
         app.post("/api/groups/:groupName", function (req, res) {
             // var groupId=req.params.groupId;
             // res.set("Content-Type","application/json");
@@ -11,12 +12,12 @@
             {
                 if(err)
                 {
-                    res.send(400,'Failed to insert group')
+                    res.status(400).send('Failed to insert group');
                 }
                 else
                 {
                      res.set("Content-Type","application/json");
-                     res.send(201,groupName + 'has been inserted');
+                    res.status(200).send(groupName + ' has been inserted');
                 }
             });
         });
@@ -28,12 +29,12 @@
             {
                 if(err)
                 {
-                    res.send(400,'Failed to insert group')
+                     res.status(400).send('Failed to insert group');
                 }
                 else
                 {
                      res.set("Content-Type","application/json");
-                     res.send(201,groupName + 'has been inserted');
+                    res.status(200).send(groupName + ' has been inserted');
                 }
             });
         });
