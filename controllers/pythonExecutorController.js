@@ -4,7 +4,6 @@
     pythonExecutorController.init = function (app) {
       
         app.get("/api/pythonexecutor/:inputMessage", function (req, res) {
-              console.log('python started');
         var msgAfterNLP='';
         inputMessage =req.params.inputMessage;
         var PythonShell = require('python-shell');
@@ -20,7 +19,6 @@
             if (err){
                 throw err;
             };
-              console.log('python ended');
               res.render("index", { Title: msgAfterNLP });
         });
 
