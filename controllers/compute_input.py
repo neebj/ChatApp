@@ -1,6 +1,6 @@
 ## compute_input.py
 
-import sys, json,nltk
+import sys, json
 #import nltk
 #Read data from stdin
 def read_in():
