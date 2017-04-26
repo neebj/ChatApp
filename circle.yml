@@ -1,5 +1,12 @@
 # The deployment section should be excluded until
 # it is explicitly included in module 5
+machine:
+  python:
+    version: 3.6.1
+
+dependencies:
+  pre:
+    - pip install -r requirements.txt
 
 deployment:
   staging:
