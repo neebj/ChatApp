@@ -1,8 +1,8 @@
 # The deployment section should be excluded until
 # it is explicitly included in module 5
-# machine:
-#   python:
-#     version: 3.6.1
+machine:
+  python:
+    version: pypy-3.6.1
 
 # dependencies:
 #   pre:
