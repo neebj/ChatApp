@@ -13,6 +13,8 @@ deployment:
     branch: master
     heroku:
       appname: chatherokuapp
+    commands:
+      - heroku run rake db:migrate --app chatherokuapp:  
 
 test:
   override:    

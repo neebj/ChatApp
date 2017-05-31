@@ -1,1 +1,1 @@
-Drop Table IF EXISTS "companies";
+Drop Table IF EXISTS "organizations";

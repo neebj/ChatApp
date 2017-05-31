@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node postgrator.js node app.js",
+    "db:migrate" : "node postgrator.js",
+    "start": "node app.js",
     "test": "mocha"
   },
   "dependencies": {
